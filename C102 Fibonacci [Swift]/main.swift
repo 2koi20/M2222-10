@@ -8,15 +8,15 @@ let n = 7
 
 
 // Add your code below:
-func fib(_ n:Int)->Int{
-  print("Calculating fibonacci(\(n))...")
-  if n<=2{
+func fib(_ inputNum:Int)->Int{
+  print("Calculating fibonacci(\(inputNum))...")
+  if inputNum<=2{
     print("Terminal case, returning 1.")
     return 1
   }else{
-    let i=(fib(n-1)+fib(n-2))    
-    print("Non-terminal case, returning \(i).")
-    return(i)
+    let result=(fib(inputNum-1)+fib(inputNum-2))    
+    print("Non-terminal case, returning \(result).")
+    return(result)
   }
 } 
 print("The final result is: \(fib(n)).")

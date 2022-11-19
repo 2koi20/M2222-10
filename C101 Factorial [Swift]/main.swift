@@ -8,15 +8,15 @@ let n = 7
 
 
 // Add your code below:
-func factorial(n:Int) -> Int {
+func factorial(inputNum:Int) -> Int {
   print("Calculating factorial(\(n))...")
-  if n <= 1 {
+  if inputNum <= 1 {
     print("Terminal case, returning 1.")
     return 1
   } else {
-    let i = (n * factorial(n:(n-1)))    
-    print("Non-terminal case, returning \(i).")
-    return (i)
+    let result = (inputNum * factorial(inputNum:(inputNum-1)))    
+    print("Non-terminal case, returning \(result).")
+    return (result)
   }
 } 
-print("The final result is: \(factorial(n:n)).")
+print("The final result is: \(factorial(inputNum:n)).")
